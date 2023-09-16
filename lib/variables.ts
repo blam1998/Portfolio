@@ -28,17 +28,19 @@ export const links = [
   export const projects = [
     {
       name: "Dew It",
-      description:"",
-      languages:[],
-      link:"",
-      inprogress: false
+      description:"Place holder.",
+      languages:["Typescript","HTML","Tailwindcss","React","Next.js","MongoDB"],
+      link:"https://dew-it.vercel.app/",
+      inprogress: false,
+      image: "",
     },
     {
       name: "Pay Down",
-      description:"",
-      languages:[],
+      description:"Place holder.",
+      languages:[""],
       link:"",
-      inprogress: true
+      inprogress: true,
+      image: "",
     }
 ] as const;
 
