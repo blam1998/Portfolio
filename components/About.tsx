@@ -7,8 +7,8 @@ import { FaGithubSquare } from "react-icons/fa";
 export default function About() {
  return (
     <section 
-        className = "flex flex-col gap-4 items-center justify-center w-[80%] sm:w-[60%] pt-[12rem] border-box"
-        id = "about">
+        className = "flex flex-col gap-4 items-center justify-center w-[80%] sm:w-[60%] my-28 scroll-mt-56"
+        id = "home">
         <motion.div 
             className = "flex flex-col items-center justify-center w-[100%]"
             initial = {{opacity: 0, y: 100}}

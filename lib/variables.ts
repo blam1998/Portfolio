@@ -1,3 +1,4 @@
+import dewit from '@/public/assets/tilt-card.png'
 export const links = [
     {
       name: "Home",
@@ -28,19 +29,22 @@ export const links = [
   export const projects = [
     {
       name: "Dew It",
-      description:"Place holder.",
-      languages:["Typescript","HTML","Tailwindcss","React","Next.js","MongoDB"],
+      description:"Is a responsive to-do list web application that allows user to organize and keep track of their daily tasks. It is designed with user experience, security, and ease of use in mind.",
+      languages:["Typescript","Tailwindcss","React","Next.js","MongoDB"],
       link:"https://dew-it.vercel.app/",
       inprogress: false,
-      image: "",
+      image: dewit,
+      github:"https://github.com/blam1998/Dew-It",
     },
     {
       name: "Pay Down",
-      description:"Place holder.",
-      languages:[""],
+      description:"Is a Client-side Ios/Android application that allows user to add their own artificial debt 'X' that they have to 'pay' with 'Y'. User can set"
+      + " the debt ratio as X:Y and user can either pay the debt, or add more debt.",
+      languages:["Typescript","Tailwindcss","React Native"],
       link:"",
       inprogress: true,
-      image: "",
+      image: dewit,
+      github:"",
     }
 ] as const;
 
@@ -48,9 +52,14 @@ export const experience = [
   {
     companyName: "SEOD Digital Marketing",
     positionName: "Wordpress Developer Intern",
-    description: [],
+    description: ["In charge of designing and creating custom forms and interactive website components that is required by the client.",
+    "Is involved in the creation and delivering process of websites by making responsive custom HTML components.",
+    "Actively researching new ways to expand company brand standing and satisfy customer needs. Research material includes but not limited to, website layouts, services and products offered, and better advertisement methods.",
+
+  ],
     duration: "02/2023 - ",
     link: "",
+    skills:["Wordpress","CSS","HTML","Elementor","Javascript","UI/UX Design"]
   }
 ] as const;
 
@@ -59,5 +68,5 @@ export const skills =
 [
   "Typescript", "React", "Next.js", "AWS Amplify", "AWS Athena", "AWS S3", "Mongodb",
   "HTML", "CSS", "Tailwindcss", "Typescript", "Git", "Python", "Framer Motion", "Wordpress",
-  "Jira", "C++"
+  "Jira", "C++", "Sass"
 ] as const;
