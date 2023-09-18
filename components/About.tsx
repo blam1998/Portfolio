@@ -1,14 +1,18 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
+    const {ref} = useSectionInView("Home");
+
  return (
     <section 
         className = "flex flex-col gap-4 items-center justify-center w-[80%] sm:w-[60%] my-28 scroll-mt-56"
-        id = "home">
+        id = "home"
+        ref = {ref}>
         <motion.div 
             className = "flex flex-col items-center justify-center w-[100%]"
             initial = {{opacity: 0, y: 100}}
@@ -26,7 +30,7 @@ export default function About() {
             <a 
                 href = "https://github.com/blam1998"
                 target="_blank"
-                className = "mt-4 p-4 rounded-full bg-slate-100 hover:scale-[1.3] hover:bg-slate-200 transition"
+                className = "mt-4 p-4 rounded-full bg-slate-100 hover:scale-[1.3] hover:bg-lime-200/40 transition"
                 title = "Github"
             >
                 <FaGithubSquare />

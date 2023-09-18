@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { projects } from '@/lib/variables'
 
+
 type ProjectProps = (typeof projects)[number];
 
 

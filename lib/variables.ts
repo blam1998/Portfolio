@@ -45,7 +45,17 @@ export const links = [
       inprogress: true,
       image: dewit,
       github:"",
-    }
+    },
+    {
+      name: "Old Portfolio",
+      description: "An old portfolio created to showcase my smaller projects.",
+      languages:["Javascript","Sass","CSS" , "React"],
+      link:"https://www.kazekito.com/",
+      inprogress: false,
+      image: dewit,
+      github:"https://github.com/blam1998/Personal-Website",
+    },
+
 ] as const;
 
 export const experience = [
