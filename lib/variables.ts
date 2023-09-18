@@ -1,4 +1,6 @@
 import dewit from '@/public/assets/tilt-card.png'
+import oldPortfolio from '@/public/assets/old-portfolio.png'
+
 export const links = [
     {
       name: "Home",
@@ -48,11 +50,11 @@ export const links = [
     },
     {
       name: "Old Portfolio",
-      description: "An old portfolio created to showcase my smaller projects.",
+      description: "An old portfolio created to showcase my smaller projects. (No longer updated since I'm using this website now.)",
       languages:["Javascript","Sass","CSS" , "React"],
       link:"https://www.kazekito.com/",
       inprogress: false,
-      image: dewit,
+      image: oldPortfolio,
       github:"https://github.com/blam1998/Personal-Website",
     },
 
@@ -67,7 +69,7 @@ export const experience = [
     "Actively researching new ways to expand company brand standing and satisfy customer needs. Research material includes but not limited to, website layouts, services and products offered, and better advertisement methods.",
 
   ],
-    duration: "02/2023 - ",
+    duration: "02/2023 - Present",
     link: "",
     skills:["Wordpress","CSS","HTML","Elementor","Javascript","UI/UX Design"]
   }

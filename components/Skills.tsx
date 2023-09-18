@@ -16,7 +16,7 @@ export default function Skills() {
     
     const {ref} = useSectionInView("Skills", 0.75);
   return (
-    <motion.div className = "flex flex-col items-center justify-center w-[60%] scroll-mt-56 my-28" id = "skills" 
+    <motion.div className = "flex flex-col items-center justify-center w-[min(90%, 60rem)] max-w-[60rem] scroll-mt-56 my-28" id = "skills" 
     ref = {ref1}
     style = {{
         opacity: scrollOpacity,

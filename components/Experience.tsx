@@ -24,8 +24,8 @@ export default function Experience() {
         scale: scrollScale,
         opacity: scrollOpacity
     }}
-    className = "w-[60%] max-w-[60rem] my-28 flex flex-col justify-center items-center">
-        <div ref = {ref}>
+    className = "w-[min(90%,60rem)] max-w-[60rem] my-28 flex flex-col justify-center items-center">
+        <div className = "w-[100%] flex flex-col justify-center items-center" ref = {ref}>
             <h2 className = "text-2xl font-medium capitalize">My Experience</h2>
             <div className = {`bg-slate-100 hover:bg-lime-200/20 hover:scale-[1.02] h-fit flex flex-col items-start justify-center mt-14 w-[100%]
             min-h-[200px] p-8 rounded-md scroll-mt-56`}

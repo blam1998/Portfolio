@@ -30,18 +30,19 @@ export default function About() {
             <a 
                 href = "https://github.com/blam1998"
                 target="_blank"
-                className = "mt-4 p-4 rounded-full bg-slate-100 hover:scale-[1.3] hover:bg-lime-200/40 transition"
+                className = "mt-4 p-4 rounded-full bg-slate-50 hover:scale-[1.3] hover:bg-lime-200/40 transition"
                 title = "Github"
             >
                 <FaGithubSquare />
             </a>
         </motion.div>
         <motion.div
-        className = "text-center whitespace-pre-line border-box pt-8"
+        className = "text-center whitespace-pre-line border-box pt-8 text-[2rem]"
             initial = {{opacity: 0, y: -100}}
             animate = {{opacity: 1, y: 0}}
             transition = {{delay: 0.5}}>
-            Hi There.
+            Hi there. I'm Bao, a <span className = "underline underline-offset-8">Junior full stack developer</span>. <br></br>My main tech stack include <span className = "font-bold">React</span> and 
+            <span className = "font-bold"> Next.js</span>.
         </motion.div>
     </section>
   )
