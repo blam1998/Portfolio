@@ -27,7 +27,7 @@ export default function Experience() {
     className = "w-[min(90%,60rem)] max-w-[60rem] my-28 flex flex-col justify-center items-center">
         <div className = "w-[100%] flex flex-col justify-center items-center" ref = {ref}>
             <h2 className = "text-2xl font-medium capitalize">My Experience</h2>
-            <div className = {`bg-slate-100 hover:bg-lime-200/20 hover:scale-[1.02] h-fit flex flex-col items-start justify-center mt-14 w-[100%]
+            <div className = {`bg-slate-100 hover:bg-lime-50 hover:scale-[1.02] h-fit flex flex-col items-start justify-center mt-14 w-[100%]
             min-h-[200px] p-8 rounded-md scroll-mt-56`}
             id = "experience">
                 <div className = "text-[1.5rem] font-semibold">{experience[0].companyName}</div>
@@ -45,7 +45,7 @@ export default function Experience() {
                 <ul className = "flex flex-row flex-wrap gap-2">
                     {
                         experience[0].skills.map((curr,index) => (
-                            <li className = "bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 mt-2">
+                            <li key = {index} className = "bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 mt-2">
                                 {curr}
                             </li>
                         ))

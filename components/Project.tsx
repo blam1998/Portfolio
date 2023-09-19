@@ -30,7 +30,7 @@ export default function Project({name, description, languages, link, inprogress,
           className="group mb-3 sm:mb-8 last:mb-0 w-[100%]"
         >
           <section className={`flex flex-row lg:group-even:flex-row-reverse bg-slate-100 w-[100%] max-w-[60rem] border 
-          border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-fit lg:h-[30rem] hover:bg-lime-200/20 hover:scale-[1.02] transition 
+          border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-fit lg:h-[30rem] hover:bg-lime-50 hover:scale-[1.02] transition 
            dark:text-white dark:bg-white/10 dark:hover:bg-white/20`}>
             <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 w-[100%] lg:max-w-[50%] flex flex-col h-full">
               <h3 className="text-2xl font-semibold">{name}</h3>
@@ -86,7 +86,7 @@ export default function Project({name, description, languages, link, inprogress,
             group-even:right-[initial] group-even:-left-20
             "
             />
-            <div className = "hidden ease-in-out duration-300 lg:block top-4 -right-20 group-even:-left-20 group-hover:-translate-x-20 group-hover:group-even:translate-x-20 absolute rounded-full w-16 h-8 transition">
+            <div className = "hidden ease-in-out duration-300 lg:block top-4 -right-20 group-even:-left-20 group-hover:-translate-x-20 group-hover:group-even:translate-x-20 absolute rounded-full w-16 h-16 transition">
               <Image
               src = {grizzCub}
               alt = "Grizzy & Cubby"

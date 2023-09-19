@@ -3,6 +3,8 @@ import React, {useRef} from 'react'
 import { projects } from '@/lib/variables'
 import Project from './Project';
 import { useSectionInView } from '@/lib/hooks';
+import rotateImg from '@/public/assets/rotate-graphics.png'
+import Image from 'next/image';
 
 export default function Projects() {
   const {ref} = useSectionInView("Projects", 0.5);

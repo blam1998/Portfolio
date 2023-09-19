@@ -19,15 +19,15 @@ export default function Skills() {
     <motion.div className = "flex flex-col items-center justify-center w-[min(90%, 60rem)] max-w-[60rem] scroll-mt-56 my-28" id = "skills" 
     ref = {ref1}
     style = {{
-        opacity: scrollOpacity,
-        scale: scrollScale
+        scale: scrollScale,
+        opacity: scrollOpacity
     }}>
         <div ref = {ref} className = "flex flex-col items-center justify-center w-[100%] scroll-mt-56 my-28">
             <h2 className = "text-2xl font-medium capitalize">My Skills</h2>
             <ul className = "flex flex-row justify-center w-[100%] flex-wrap gap-4 border-box p-8">
                 {
                 skills.map((curr,index) => (
-                    <li className = "rounded-full bg-slate-200 p-4 text-slate-800/70 shadow-black/15 shadow-md">{curr}</li>
+                    <li className = "rounded-full bg-slate-200 p-4 text-slate-800/70 shadow-black/15 shadow-md" key = {index}>{curr}</li>
                 ))
                 }
             </ul>
