@@ -15,23 +15,27 @@ export default function RotateImage({children}:RotateImageProps) {
         offset: ["0 .5", "1.3 1"]
     })
 
-    var rotateY = useTransform(scrollYProgress, [0,1], [-20, 20])
+    var translateY = useTransform(scrollYProgress, [0,1], [-200, 200])
+    var translateX = useTransform(scrollYProgress, [0,1], [-200, 200])
 
   return (
     <motion.div
-        className = "w-full flex flex-col items-center justify-center relative"
+        className = "w-full flex flex-col items-center justify-center relative overflow-hidden"
         ref = {ref}>
-            <motion.div className = {`rotate-container absolute top-0 left-0 w-full h-full -z-10`}
+            <motion.div className = {`rotate-container absolute top-0 left-0 w-full h-full -z-10 overflow-hidden`}
             style = {{
-                skewY: rotateY,
-                perspective: "1000px",
+                translateY: translateY,
+                translateX: translateX
+            }}
+            transition = {{
+                duration: 0.3,
             }}>
                 <div className = "relative w-full h-full overflow-hidden">
-                    <Image src = {rotateImg} alt = "Rotate Image" className = "rotate-image hidden lg:block -translate-z-[400px] translate-x-[20%] -translate-y-[15%] -z-10"
+                    <Image src = {rotateImg} alt = "Rotate Image" className = "rotate-image hidden lg:block translate-x-[20%] -translate-y-[15%] -z-10"
                     id = "rotate-image-1"/>
-                    <Image src = {rotateImg} alt = "Rotate Image" className = "rotate-image hidden lg:block -translate-z-[150px] -translate-x-[20%] translate-y-[15%] -z-10"
+                    <Image src = {rotateImg} alt = "Rotate Image" className = "rotate-image hidden lg:block -translate-x-[20%] translate-y-[15%] -z-10"
                     id = "rotate-image-2" />
-                    <Image src = {rotateImg} alt = "Rotate Image" className = "rotate-image hidden lg:block -translate-z-[200px] -translate-x-[30%] -translate-y-[40%] -z-10"
+                    <Image src = {rotateImg} alt = "Rotate Image" className = "rotate-image hidden lg:block -translate-x-[30%] -translate-y-[40%] -z-10"
                     id = "rotate-image-3" />
                 </div>
             </motion.div>

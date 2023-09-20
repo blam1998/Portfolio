@@ -1,5 +1,6 @@
 import dewit from '@/public/assets/tilt-card.png'
 import oldPortfolio from '@/public/assets/old-portfolio.png'
+import inprogress from '@/public/assets/Inprogress.png'
 
 export const links = [
     {
@@ -45,7 +46,7 @@ export const links = [
       languages:["Typescript","Tailwindcss","React Native"],
       link:"",
       inprogress: true,
-      image: dewit,
+      image: inprogress,
       github:"",
     },
     {
