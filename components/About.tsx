@@ -1,9 +1,9 @@
 "use client";
-import React, { useEffect } from 'react';
-import {motion} from 'framer-motion';
-import Image from 'next/image';
-import github from '@/public/assets/Github.svg'
-import { useSectionInView } from '@/lib/hooks';
+import React, { useEffect } from "react";
+import {motion} from "framer-motion";
+import Image from "next/image";
+import github from "@/public/assets/Github.svg"
+import { useSectionInView } from "@/lib/hooks";
 
 var tempArray = new Array();
 for (let i = 0; i < 25; i++){
@@ -23,7 +23,7 @@ export default function About() {
             initial = {{opacity: 0, y: 100}}
             animate = {{opacity: 1, y: 0}}
             transition = {{delay: 0.5}}>
-            <Image src = {'/assets/GrizzCub.jpg'} alt = "image" width = {192} height = {192}
+            <Image src = {"/assets/GrizzCub.jpg"} alt = "image" width = {192} height = {192}
             className = "rounded-full bg-white drop-shadow-2xl" />
         </motion.div>
         <div className = "w-full h-full relative -z-10">
