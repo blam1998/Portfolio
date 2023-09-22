@@ -70,7 +70,7 @@ export const experience = [
     "Actively researching new ways to expand company brand standing and satisfy customer needs. Research material includes but not limited to, website layouts, services and products offered, and better advertisement methods.",
 
   ],
-    duration: "12/2021 - Present",
+    duration: "02/2023 - Present",
     link: "",
     skills:["Wordpress","CSS","HTML","Elementor","Javascript","UI/UX Design"]
   }
