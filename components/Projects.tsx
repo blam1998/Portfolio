@@ -7,7 +7,7 @@ import rotateImg from '@/public/assets/rotate-graphics.png'
 import Image from 'next/image';
 
 export default function Projects() {
-  const {ref} = useSectionInView("Projects", 0.5);
+  const {ref} = useSectionInView("Projects", 0.1);
 
   return (
     <section 

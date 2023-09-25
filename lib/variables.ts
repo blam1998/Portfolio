@@ -65,7 +65,8 @@ export const experience = [
   {
     companyName: "SEOD Digital Marketing",
     positionName: "Wordpress Developer Intern",
-    description: ["In charge of designing and creating custom forms and interactive website components that is required by the client.",
+    description: ["Looked for project opportunities by researching request for proposals of small and big companies.",
+      "In charge of designing and creating custom forms and interactive website components that is required by the client.",
     "Is involved in the creation and delivering process of websites by making responsive custom HTML components.",
     "Actively researching new ways to expand company brand standing and satisfy customer needs. Research material includes but not limited to, website layouts, services and products offered, and better advertisement methods.",
 

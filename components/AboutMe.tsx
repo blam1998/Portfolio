@@ -12,7 +12,7 @@ export default function AboutMe() {
 
   const { scrollYProgress } = useScroll({
     target: ref1,
-    offset: ["0 1", "1.3 1"]
+    offset: ["0 1", "0.6 1"]
   })
   const scrollOpacity = useTransform(scrollYProgress, [0,1], [0.5,1]);
   const scrollScale = useTransform(scrollYProgress, [0,1], [0.75,1])
@@ -30,7 +30,7 @@ export default function AboutMe() {
         }}>
           <h2 className = "text-2xl font-medium capitalize tracking-widest">About Me</h2>
           <div className = "flex flex-row flex-wrap text-[1.15rem] mt-8">
-            <ul className = "flex flex-col gap-4">
+            <ul className = "flex flex-col gap-4 flex-wrap">
               <li className = "leading-8">
                 I graduated from <span className = "font-semibold">University of California, Riverside</span> with a <span className = "font-semibold">Bachelors</span> degree in <span className = "underline underline-offset-8">Computer Science</span>.
               </li>

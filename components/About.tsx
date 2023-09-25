@@ -26,7 +26,7 @@ export default function About() {
             <Image src = {"/assets/GrizzCub.jpg"} alt = "image" width = {192} height = {192}
             className = "rounded-full bg-white drop-shadow-2xl" />
         </motion.div>
-        <div className = "w-full h-full relative -z-10">
+        <div className = "w-full h-full -z-10 absolute">
             <div className = "firefly-container">
                 {
                     tempArray.map((x,i) => {

@@ -10,7 +10,7 @@ export default function Experience() {
     const ref1 = useRef<HTMLDivElement>(null);
     const {scrollYProgress} = useScroll({
         target: ref1,
-        offset: ["0 1", "1.3 1"]
+        offset: ["0 1", "0.6 1"]
     })
     const scrollOpacity = useTransform(scrollYProgress, [0,1], [0.2,1])
     const scrollScale = useTransform(scrollYProgress, [0,1], [0.7, 1])
@@ -23,6 +23,9 @@ export default function Experience() {
     style = {{
         scale: scrollScale,
         opacity: scrollOpacity
+    }}
+    transition = {{
+        duration: 1
     }}
     className = "w-[min(90%,60rem)] max-w-[60rem] my-28 flex flex-col justify-center items-center">
         <div className = "w-[100%] flex flex-col justify-center items-center" ref = {ref}>

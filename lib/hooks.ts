@@ -4,7 +4,7 @@ import { useActiveSectionContext } from '@/context/ActiveContext';
 import { sectionName } from './types';
 
 
-export function useSectionInView(sectionName:sectionName, threshold = 0.75) {
+export function useSectionInView(sectionName:sectionName, threshold = 0.25) {
     const {ref, inView} = useInView({threshold});
     const {setActiveSection, lastClick} = useActiveSectionContext();
 
