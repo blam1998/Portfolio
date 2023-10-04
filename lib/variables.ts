@@ -33,7 +33,7 @@ export const links = [
     {
       name: "Dew It",
       description:"Is a responsive to-do list web application that allows user to organize and keep track of their daily tasks. It is designed with user experience, security, and ease of use in mind.",
-      languages:["Typescript","Tailwindcss","React","Next.js","MongoDB"],
+      languages:["Typescript","Tailwindcss","React","Next.js","MongoDB", "Vercel"],
       link:"https://dew-it.vercel.app/",
       inprogress: false,
       image: dewit,
@@ -43,7 +43,7 @@ export const links = [
       name: "Pay Down",
       description:"Is a Client-side Ios/Android application that allows user to add their own artificial debt 'X' that they have to 'pay' with 'Y'. User can set"
       + " the debt ratio as X:Y and user can either pay the debt, or add more debt.",
-      languages:["Typescript","Tailwindcss","React Native"],
+      languages:["Typescript","Tailwindcss","React Native", "AsyncStorage"],
       link:"",
       inprogress: true,
       image: inprogress,
