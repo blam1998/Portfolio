@@ -15,6 +15,9 @@ for (let i = 0; i < 25; i++){
 
 export default function About() {
     const {ref} = useSectionInView("Home", 0.1);
+    
+    ReactGA.initialize("G-RY63PVT5P5");
+    ReactGA.send({hitType: "pageview", page: usePathname(), title: "Home Page"});
 
  return (
     <section 
