@@ -7,8 +7,6 @@ import { useSectionInView } from "@/lib/hooks";
 import ReactGA from "react-ga4";
 import {usePathname} from 'next/navigation'
 
-ReactGA.initialize("G-79QE0418LQ");
-ReactGA.send({hitType: "pageview", page: usePathname(), title: "Home Page"});
 
 var tempArray = new Array();
 for (let i = 0; i < 25; i++){
@@ -17,6 +15,8 @@ for (let i = 0; i < 25; i++){
 
 export default function About() {
     const {ref} = useSectionInView("Home", 0.1);
+    ReactGA.initialize("G-79QE0418LQ");
+    ReactGA.send({hitType: "pageview", page: usePathname(), title: "Home Page"});
 
  return (
     <section 
