@@ -5,6 +5,15 @@ import Experience from '@/components/Experience'
 import AboutMe from '@/components/AboutMe'
 import Contact from '@/components/Contact'
 import RotateImage from '@/components/RotateImage'
+import ReactGA from "react-ga4";
+
+try{
+  ReactGA.initialize("G-79QE0418LQ");
+  ReactGA.send({hitType: "pageview", page: "", title: "Home page"});
+}
+catch(error:any){
+  console.log(error);
+}
 
 export default function Home() {
   return (
