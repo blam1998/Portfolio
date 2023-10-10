@@ -7,8 +7,6 @@ import ActiveContext from '@/context/ActiveContext'
 import ReactGA from "react-ga4";
 
 
-ReactGA.initialize("G-79QE0418LQ");
-ReactGA.send({hitType: "pageview", page: window.location.pathname});
 
 
 
