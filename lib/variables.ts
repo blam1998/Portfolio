@@ -32,8 +32,9 @@ export const links = [
   export const projects = [
     {
       name: "Dew It",
-      description:"Is a responsive to-do list web application that allows user to organize and keep track of their daily tasks. It is designed with user experience, security, and ease of use in mind.",
-      languages:["Typescript","Tailwindcss","React","Next.js","MongoDB", "Vercel"],
+      description:"Is a responsive to-do list web application that allows user to organize and keep track of their daily tasks." + 
+      "It is designed with user experience, security, and ease of use in mind.",
+      languages:["Typescript","Tailwindcss","React","Next.js","MongoDB", "Vercel", "CI/CD"],
       link:"https://dew-it.vercel.app/",
       inprogress: false,
       image: dewit,

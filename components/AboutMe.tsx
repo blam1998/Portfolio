@@ -8,7 +8,7 @@ import { useSectionInView } from '@/lib/hooks';
 
 export default function AboutMe() {
   const ref1 = useRef<HTMLDivElement>(null);
-  const {ref} = useSectionInView("About");
+  const {ref} = useSectionInView("About", 0.5);
 
   const { scrollYProgress } = useScroll({
     target: ref1,
@@ -20,7 +20,7 @@ export default function AboutMe() {
   return (
     <section 
       ref = {ref} 
-      className = "flex flex-col items-center justify-center w-[min(90%,60rem)] my-28 lg:max-w-[60rem] scroll-mt-56" id = "about">
+      className = "flex flex-col items-center justify-center w-[min(90%,60rem)] my-[12rem] lg:max-w-[60rem] scroll-mt-56" id = "about">
         <motion.div
         className = "flex flex-col items-center justify-center w-[100%]"
         ref = {ref1}

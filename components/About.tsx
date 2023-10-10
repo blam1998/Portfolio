@@ -11,7 +11,7 @@ for (let i = 0; i < 25; i++){
 }
 
 export default function About() {
-    const {ref} = useSectionInView("Home");
+    const {ref} = useSectionInView("Home", 0.1);
 
  return (
     <section 
@@ -23,8 +23,8 @@ export default function About() {
             initial = {{opacity: 0, y: 100}}
             animate = {{opacity: 1, y: 0}}
             transition = {{delay: 0.5}}>
-            <Image src = {"/assets/GrizzCub.jpg"} alt = "image" width = {192} height = {192}
-            className = "rounded-full bg-white drop-shadow-2xl" />
+            <Image src = {"/assets/GrizzCub2.png"} alt = "image" width = {108} height = {108}
+            className = "rounded-full bg-white drop-shadow-2xl overflow-hidden" />
         </motion.div>
         <div className = "w-full h-full -z-10 absolute">
             <div className = "firefly-container">
@@ -36,7 +36,7 @@ export default function About() {
             </div>
         </div>
         <motion.div
-            className = "flex flex-col items-center justify-center w-[100%]"
+            className = "flex flex-col items-center justify-center relative group"
             initial = {{opacity: 0}}
             animate = {{opacity: 1}}
             transition = {{delay: 1, duration: 1}}
@@ -44,10 +44,10 @@ export default function About() {
             <a 
                 href = "https://github.com/blam1998"
                 target="_blank"
-                className = "mt-4 p-2 rounded-full bg-slate-50 hover:scale-[1.3] hover:bg-sky-200/40 transition"
+                className = "mt-4 p-2 rounded-full bg-slate-50 group-hover:bg-white group-hover:scale-[1.3] group-hover:shadow-[0px_0px_25px_#bae6fd] transition"
                 title = "Github"
             >
-                <Image src= {github} alt = "github" quality = {90}/>
+                <Image src= {github} alt = "github" width = {24} height = {24} quality = {90}/>
             </a>
         </motion.div>
         <motion.div

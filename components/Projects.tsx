@@ -15,10 +15,10 @@ export default function Projects() {
         id = "projects"
         ref = {ref}>
           <h2 className = "text-2xl font-medium capitalize tracking-widest mb-8">My Projects</h2>
-          <div>
+          <div className = "relative">
               {
               projects.map((project,index) =>(
-                  <React.Fragment key = {index}>
+                  <React.Fragment key = {index} >
                       <Project {...project}/>
                   </React.Fragment>
               ))
