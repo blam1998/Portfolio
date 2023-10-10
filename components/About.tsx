@@ -4,6 +4,11 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import github from "@/public/assets/Github.svg"
 import { useSectionInView } from "@/lib/hooks";
+import ReactGA from "react-ga4";
+import {usePathname} from 'next/navigation'
+
+ReactGA.initialize("G-79QE0418LQ");
+ReactGA.send({hitType: "pageview", page: usePathname(), title: "Home Page"});
 
 var tempArray = new Array();
 for (let i = 0; i < 25; i++){
