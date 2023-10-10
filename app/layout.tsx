@@ -4,6 +4,16 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import ActiveContext from '@/context/ActiveContext'
+import ReactGA from "react-ga4";
+
+try{
+  ReactGA.initialize("G-79QE0418LQ");
+  ReactGA.send({hitType: "pageview", page: "/", title: "Home page"});
+}
+catch(error:any){
+  console.log(error);
+}
+
 
 const inter = Inter({ subsets: ['latin'] })
 
