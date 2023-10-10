@@ -15,8 +15,6 @@ for (let i = 0; i < 25; i++){
 
 export default function About() {
     const {ref} = useSectionInView("Home", 0.1);
-    ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID as string);
-    ReactGA.send({hitType: "pageview", page: usePathname(), title: "Home Page"});
 
  return (
     <section 
