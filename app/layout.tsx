@@ -8,7 +8,8 @@ import ReactGA from "react-ga4";
 import { Analytics } from '@vercel/analytics/react';
 
 
-
+ReactGA.initialize("G-79QE0418LQ");
+ReactGA.send({hitType: "pageview", title: "Home Page"});
 
 
 const inter = Inter({ subsets: ['latin'] })
