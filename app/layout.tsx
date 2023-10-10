@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import ActiveContext from '@/context/ActiveContext'
 import ReactGA from "react-ga4";
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <ActiveContext>
           <Header/>
           {children}
+          <Analytics/>
         </ActiveContext>
       </body>
     </html>
